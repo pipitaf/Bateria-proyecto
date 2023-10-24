@@ -9,6 +9,7 @@
 
 body{
     min-height: 100vh;
+    overflow-x: hidden;
     background: linear-gradient(#E934B7, #FFCD1C, #830f4f)
 }
 header{
@@ -30,6 +31,7 @@ header .logo{
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+
 }
 header ul{
     display: flex;
@@ -49,11 +51,23 @@ header ul li a{
    border-radius: 10px;
 }
 
+header ul li a.Carrito
+{
+    font-size: larger;
+}
+
+
+header ul li a.Lupa
+{
+    font-size: larger;
+}
+
 header ul li a:hover,
 header ul li a.active
 {
     color: purple;;
     background: white;
+
 }
 
 section{
@@ -70,15 +84,84 @@ section img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 10;
 }
+
+section img#Estrellas{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 11;
+}
+
+section img#Montaña_detras{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 12;
+}
+
+section img#Montaña_lago{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 13;
+}
+section img#Arboles_frente{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 14;
+}
+
+section img#Arboles_detras{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 15;
+}
+
 
 #text {
     color: #ffff;
     font-weight: 500;
     white-space: nowrap;
-    font-size: 28px;
+    font-size: 100px;
     text-transform: uppercase;
-    position: absolute;
+    padding-top: 80px;
+    position: relative;
     letter-spacing: 1px;
     z-index: 9;
 }
+
+.Contenido
+{
+    position: relative;
+    padding: 100px;
+    background: #010059;
+}
+
+.Contenido h2{
+    color: #ffff; 
+}
+
+.Contenido p{
+    font-size: 1.2em;
+    color: #ffff 
+}
+
