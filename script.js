@@ -17,3 +17,28 @@ window.addEventListener('scroll',function(){
     Logo_largo.style.top = value * 0.5 + 'px';
     Lago.style.marginBottom = value * 4.9 + 'px';
 })
+
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item');
+
+function showSlide(index) {
+  currentIndex = index;
+  const translateValue = -index * 100 + '%';
+  document.querySelector('.carousel-inner').style.transform = 'translateX(' + translateValue + ')';
+}
+
+function nextSlide() {
+  if (currentIndex < items.length - 1) {
+    showSlide(currentIndex + 1);
+  } else {
+    showSlide(0);
+  }
+}
+
+function prevSlide() {
+  if (currentIndex > 0) {
+    showSlide(currentIndex - 1);
+  } else {
+    showSlide(items.length - 1);
+  }
+}

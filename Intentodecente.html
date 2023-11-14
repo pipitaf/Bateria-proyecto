@@ -12,12 +12,11 @@
         <header>
             <a href="#" class="logo">NJAB</a>
             <ul> 
-                <li><a href="#" class="Carrito">🛒</a></li>
                 <li><a href="#" class="Lupa">🔍︎</a></li>
-                <li><a href="#" class="active">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="Intentodecente.html" class="active" >Inicio</a></li>
+                <li><a href="Sobre_Nosotros.html" >Sobre Nosotros</a></li>
+                <li><a href="Productors.html" >Productos</a></li>
+                <li><a href="#" class="Carrito">🛒</a></li>
             </ul>
         </header>
         <section id="Paralax">
@@ -34,12 +33,32 @@
             <img src="img/Fondo/Arboles detras.png" id="Arboles_detras">
         </section>
         
-        <section class="Contenido">
-            <h2>Titulazo</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br><br>Tenetur, nihil obcaecati placeat dicta adipisci asperiores aliquid, dolores ab eum et voluptas nobis voluptatum quae perferendis, earum velit qui ratione nostrum!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nihil obcaecatiLorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nihil obcaecati
-            </p>
+        <section class="Principal">
+            <div class="carousel-container">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <div class="product">
+        <h3>Bateria 1</h3>
+            <img src="img/Bateria1.png" style="width:500px;height:600px;">></img>
+        <p>Tetas</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="product">Producto 2</div>
+    </div>
+    <div class="carousel-item">
+      <div class="product">Producto 3</div>
+    </div>
+    <!-- Añadir más elementos según sea necesario -->
+  </div>
+
+  <div class="carousel-controls">
+    <button class="control" onclick="prevSlide()">❮</button>
+    <button class="control" onclick="nextSlide()">❯</button>
+  </div>
+</div>
         </section>
+        
         <script src="script.js"></script>
     </body>
 </html>

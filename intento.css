@@ -12,8 +12,11 @@ body{
     overflow-x: hidden;
     background: linear-gradient(#E934B7, #FFCD1C, #830f4f)
 }
+
+.NoPagPpal *{
+    background-color: #010059;
+}
 header{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,6 +25,7 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    position: sticky;
 }
 
 header .logo{
@@ -42,6 +46,7 @@ header ul{
 header ul li{
     list-style: none;
     margin-left: 10px;
+    
 }
 
 header ul li a{
@@ -89,7 +94,7 @@ section img{
 
 section img#Estrellas{
     position: absolute;
-    top: 0;
+    top: -100px;
     left: 0px;
     width: 100%;
     height: 100%;
@@ -160,19 +165,55 @@ section img#Arboles_detras{
     z-index: 9;
 }
 
-.Contenido
+.Principal
 {
     position: relative;
     padding: 100px;
     background: #010059;
 }
 
-.Contenido h2{
-    color: #ffff; 
-}
+/* PITO PITO */
 
-.Contenido p{
-    font-size: 1.2em;
-    color: #ffff 
-}
+.carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+  }
 
+  .carousel-inner {
+    display: flex;
+    transition: 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+
+  .control {
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    outline: none;
+    z-index: 999;
+  }
