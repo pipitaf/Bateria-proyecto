@@ -13,9 +13,6 @@ body{
     background: linear-gradient(#E934B7, #FFCD1C, #830f4f)
 }
 
-.NoPagPpal *{
-    background-color: #010059;
-}
 header{
     top: 0;
     left: 0;
@@ -73,6 +70,10 @@ header ul li a.active
     color: purple;;
     background: white;
 
+}
+
+footer{
+    color:#ffff
 }
 
 section{
@@ -169,51 +170,74 @@ section img#Arboles_detras{
 {
     position: relative;
     padding: 100px;
-    background: #010059;
+    background-color: #010059;
 }
 
-/* PITO PITO */
+/* Carusel */
+
+#carousel{
+    align-items: center;
+    justify-content: center;
+}
 
 .carousel-container {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
+    width: 700px;
+    margin: auto;
     overflow: hidden;
-  }
+    position:relative;
+    left: 0%;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 750px;
+}
 
-  .carousel-inner {
+.carousel-content {
     display: flex;
     transition: 0.5s ease-in-out;
-  }
+}
 
-  .carousel-item {
+.carousel-item {
     min-width: 100%;
     box-sizing: border-box;
-  }
+}
 
-  .product {
-    border: 1px solid #ddd;
+.product {
     padding: 20px;
     text-align: center;
-    background-color: #fff;
-  }
+    color:#ffff;
+    background-color: #010059;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width:700px;
+    height:auto;
+}
 
-  .carousel-controls {
+.prev-btn,.next-btn {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     transform: translateY(-50%);
-  }
-
-  .control {
-    cursor: pointer;
     font-size: 24px;
     background-color: #333;
     color: #fff;
     border: none;
     padding: 10px;
+    border-radius: 5px;
     outline: none;
-    z-index: 999;
-  }
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Carusel */
+
+.NoPagPpal{
+    background: #010059;
+    color: #ffff;
+    align-content: center;
+}

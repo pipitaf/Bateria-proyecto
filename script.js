@@ -18,27 +18,32 @@ window.addEventListener('scroll',function(){
     Lago.style.marginBottom = value * 4.9 + 'px';
 })
 
-let currentIndex = 0;
-const items = document.querySelectorAll('.carousel-item');
 
-function showSlide(index) {
-  currentIndex = index;
-  const translateValue = -index * 100 + '%';
-  document.querySelector('.carousel-inner').style.transform = 'translateX(' + translateValue + ')';
+/* Carusel */
+
+const carouselContent = document.querySelector('.carousel-content');
+let currentIndex = 0;
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + 4) % 4; // 3 es el número total de productos
+    updateCarousel();
 }
 
 function nextSlide() {
-  if (currentIndex < items.length - 1) {
-    showSlide(currentIndex + 1);
-  } else {
-    showSlide(0);
-  }
+    currentIndex = (currentIndex + 1) % 4; // 3 es el número total de productos
+    updateCarousel();
 }
 
-function prevSlide() {
-  if (currentIndex > 0) {
-    showSlide(currentIndex - 1);
-  } else {
-    showSlide(items.length - 1);
-  }
+function updateCarousel() {
+    const newTransformValue = -currentIndex * 100 + '%';
+    carouselContent.style.transform = 'translateX(' + newTransformValue + ')';
 }
+
+/* Temporizador */
+
+
+setInterval(() => {
+  nextSlide();
+}, 10000);
+
+/* Carusel */
