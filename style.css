@@ -239,22 +239,122 @@ section img#Arboles_detras{
 .NoPagPpal{
     background: #010059;
     color: #ffff;
-    align-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#presentacion{
+#Presentacion {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    padding: 50%;
+    height: 600px;
 }
 
-#presentacion h1, p{
+.titulo {
+    font-size: larger;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#Textaco {
     font-size: larger;
     max-width: 980px;
+    text-align: center;
+}
+
+.Contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.Contacto ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contacto li{
+    list-style: none;   
+    padding-left: 10px;
+}
+
+.galeria{
+    width: 80%;
+    margin:auto;
+
+}
+
+.galeria ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria li{
+    list-style: none;
+}
+
+.Producto {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 90%;
+    width: 90%;
+    flex: 1;
+    transition: flex 0.3s ease-in-out;
+}
+
+.Producto img {
     width: 100%;
-    text-align:center;
-    position: fixed;
-    left:20%
+    height: auto;
+    transition:  0.3s ease-in-out;
+}
+
+.marco {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 250, 250, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.marco_titulo{
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.marco_p{
+    position: relative;
+    color:#010059;
+    max-width: 100%;
+    text-align: center;
+}
+
+.Producto:hover img {
+    transform: scale(1.1);
+}
+
+.Producto:hover .marco {
+    opacity: 1;
+}
+
+.selected img {
+    transform: scale(1.2);
+}
+
+.selected .marco {
+    opacity: 3;
 }
