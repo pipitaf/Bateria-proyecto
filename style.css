@@ -241,3 +241,20 @@ section img#Arboles_detras{
     color: #ffff;
     align-content: center;
 }
+
+#presentacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50%;
+}
+
+#presentacion h1, p{
+    font-size: larger;
+    max-width: 980px;
+    width: 100%;
+    text-align:center;
+    position: fixed;
+    left:20%
+}
