@@ -25,12 +25,12 @@ const carouselContent = document.querySelector('.carousel-content');
 let currentIndex = 0;
 
 function prevSlide() {
-    currentIndex = (currentIndex - 1 + 4) % 4; // 3 es el número total de productos
+    currentIndex = (currentIndex - 1 + 4) % 4;
     updateCarousel();
 }
 
 function nextSlide() {
-    currentIndex = (currentIndex + 1) % 4; // 3 es el número total de productos
+    currentIndex = (currentIndex + 1) % 4;
     updateCarousel();
 }
 
@@ -44,6 +44,25 @@ function updateCarousel() {
 
 setInterval(() => {
   nextSlide();
-}, 10000);
+}, 15000);
 
 /* Carusel */
+
+function toggleMenu() {
+    var menu = document.getElementById('slide-menu');
+    var overlay = document.getElementById('overlay');
+    if (menu.style.right === '0px') {
+        menu.style.right = '-250px';
+        overlay.style.display = 'none';
+    } else {
+        menu.style.right = '0px';
+        overlay.style.display = 'block';
+    }
+}
+ 
+function closeMenu() {
+    var menu = document.getElementById('slide-menu');
+    var overlay = document.getElementById('overlay');
+    menu.style.right = '-250px';
+    overlay.style.display = 'none';
+}
