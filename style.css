@@ -313,6 +313,7 @@ section img#Arboles_detras{
     transition: flex 0.3s ease-in-out;
 }
 
+
 .Producto img {
     width: 100%;
     height: auto;
@@ -338,7 +339,7 @@ section img#Arboles_detras{
     left:100%;
     bottom:200px;
     text-align: center;
-    max-width: max-content;
+    max-width: fit-content;
     color:#010059
 }
 
@@ -346,6 +347,8 @@ section img#Arboles_detras{
     position: relative;
     top:40px;
     color:#010059;
+    right: 50px;
+    max-width: fit-content;
 }
 
 
