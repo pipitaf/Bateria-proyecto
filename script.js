@@ -47,12 +47,3 @@ setInterval(() => {
 }, 15000);
 
 /* Carusel */
-
- 
-function closeMenu() {
-    function toggleMenu() {
-        var menu = document.getElementById("menu");
-        menu.style.right = (menu.style.right === "0%" || menu.style.right === "") ? "-30%" : "0%";
-    }
-}
-/* Tienda */
