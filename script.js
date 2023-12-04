@@ -48,21 +48,11 @@ setInterval(() => {
 
 /* Carusel */
 
-function toggleMenu() {
-    var menu = document.getElementById('slide-menu');
-    var overlay = document.getElementById('overlay');
-    if (menu.style.right === '0px') {
-        menu.style.right = '-250px';
-        overlay.style.display = 'none';
-    } else {
-        menu.style.right = '0px';
-        overlay.style.display = 'block';
-    }
-}
  
 function closeMenu() {
-    var menu = document.getElementById('slide-menu');
-    var overlay = document.getElementById('overlay');
-    menu.style.right = '-250px';
-    overlay.style.display = 'none';
+    function toggleMenu() {
+        var menu = document.getElementById("menu");
+        menu.style.right = (menu.style.right === "0%" || menu.style.right === "") ? "-30%" : "0%";
+    }
 }
+/* Tienda */
